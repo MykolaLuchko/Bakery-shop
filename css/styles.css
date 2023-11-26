@@ -9,7 +9,9 @@
 }
 
 /* Base */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -35,6 +37,10 @@ address {
 iframe {
     width: 100%;
     max-width: 603px;
+}
+
+a {
+    display: inline-block;
 }
 
 .button {
@@ -210,6 +216,31 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Chef sections */
+
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
+}
+
+
 .chef-title {
     font-size: 40px;
     font-weight: 600;
@@ -254,6 +285,13 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primery-dark) 100%);
     height: 444px;
+    max-width: 349px;
+}
+
+.formats-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .formats-title {
@@ -270,14 +308,30 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 80px;
 }
 
+.contakts-section {
+    padding-bottom: 96px;
+}
+
+.contakts-conteiner {
+    display: flex;
+    gap: 32px;
+}
+
 .contakts-title {
     margin-bottom: 16px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
 }
 
 /* Carusel */
 
 .carusel-button {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -297,6 +351,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* footer */
+
+.footer {
+    padding: 32px 0;
+}
 
 .adress-link {
     color: var(--color-primery-light);
@@ -331,6 +389,39 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
     padding: 0 24px;
 }
+
+.footer-conteiner {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-logo {
+    flex-grow: 1;
+}
+
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
 
 .footer {
     background-image: url('../images/footer.png');
