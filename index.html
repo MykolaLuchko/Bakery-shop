@@ -37,7 +37,9 @@
               </li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -104,7 +106,6 @@
                       Вже 10 років, я втілюю <br />
                       у життя цікаві та смачні ідеї.
                     </p>
-
                     <p>
                       Я випічу для вас <br />
                       найсмачніщі вироби!
@@ -276,5 +277,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal-btn-close">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
