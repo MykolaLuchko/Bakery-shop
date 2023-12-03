@@ -1,0 +1,32 @@
+.traditional-text .brand {
+    color: var(--color-brend);
+    font-weight: 600;
+}
+
+.traditional-text .uppercase {
+    text-transform: uppercase;
+}
+
+.traditional-text.limited {
+    max-width: 340px;
+}
+
+
+.traditional-section {
+    padding-top: 96px;
+}
+
+.traditional-title {
+    margin-bottom: 42px;
+
+}
+
+.traditional-conteiner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditional-content {
+    max-width: 710px;
+}

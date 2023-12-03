@@ -1,0 +1,52 @@
+.form-field {
+    margin-bottom: 32px;
+}
+
+.form-input {
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-primery-dark);
+    padding: 16px 42px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--bakery-landing-14);
+    background-color: transparent;
+}
+
+.form-input:focus {
+    border-color: var(--color-brend);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--bakery-landing-14);
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primery-dark);
+}
+
+
+
+.form-lable {
+    display: block;
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.form-terms {
+    margin: 0 auto;
+    max-width: 220px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form-link {
+    color: var(--color-primery-dark);
+    text-underline-offset: 2px;
+}
