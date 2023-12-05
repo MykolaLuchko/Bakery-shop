@@ -1,7 +1,3 @@
-.traditional-text.limited {
-  max-width: 340px;
-}
-
 .traditional-section {
   padding-top: 96px;
 
@@ -17,5 +13,11 @@
 
   &__content {
     max-width: 710px;
+  }
+
+  &__text {
+    &--limited {
+      max-width: 340px;
+    }
   }
 }

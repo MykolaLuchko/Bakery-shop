@@ -1,8 +1,12 @@
-.form-field {
-    margin-bottom: 32px;
-}
+.input {
+  position: relative;
+  &__lable {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
 
-.form-input {
+  &__control {
     font-size: 16px;
     line-height: 1.17;
     color: var(--color-primery-dark);
@@ -11,42 +15,21 @@
     border-radius: 8px;
     border: 1px solid var(--bakery-landing-14);
     background-color: transparent;
+
+    &:focus {
+      border-color: var(--color-brend);
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--bakery-landing-14);
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primery-dark);
+    }
+  }
 }
 
-.form-input:focus {
-    border-color: var(--color-brend);
-    outline: none;
-}
-
-.form-input::placeholder {
-    color: var(--bakery-landing-14);
-}
-
-.form-input:focus::placeholder {
-    color: var(--color-primery-dark);
-}
-
-
-
-.form-lable {
-    display: block;
-}
-
-.form-button {
-    display: block;
-    margin: 0 auto 24px;
-}
-
-.form-terms {
-    margin: 0 auto;
-    max-width: 220px;
-    line-height: 1.5;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.form-link {
-    color: var(--color-primery-dark);
-    text-underline-offset: 2px;
+.form-field {
+  margin-bottom: 32px;
 }
