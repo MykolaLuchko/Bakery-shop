@@ -37,9 +37,20 @@
               </li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <!-- mobile-menu -->
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -50,6 +61,9 @@
         <h1 class="hiro-section__title">
           <span class="text-brand">Сучасна</span> пекарня
         </h1>
+         <button class="hiro-section__button button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
       </section>
 
       <section class="advantages-section">
@@ -91,12 +105,14 @@
                 обслуговування!
               </p>
             </div>
-            <img src="./images/baker-man 1560.jpg" alt="пекар" />
+            <img class="traditional-section__image" 
+            srcset="./images/baker-man-1560.jpg 1x, ./images/baker-man-1560@2x.jpg 2x"
+            src="./images/baker-man 1560.jpg" alt="пекар" />
           </div>
         </div>
       </section>
 
-      <section class="chef-section section" id="chef-section">
+      <!-- <section class="chef-section section" id="chef-section">
         <div class="conteiner">
           <h2
             class="chefs-section__title section__title section__title--center"
@@ -363,18 +379,18 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal-btn-close">Close</button>
+        <button type="button" class="modal__close">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocomplete="on">
-          <div class="form-field">
-            <label class="form-lable hidden" for="user-name">Ім'я</label>
+          <div class="modal__form-field input">
+            <label class="input__lable hidden" for="user-name">Ім'я</label>
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               id="user-name"
               name="user-name"
@@ -385,10 +401,10 @@
             />
           </div>
 
-          <div class="form-field">
-            <label class="form-lable hidden" for="user-tel">Телефон</label>
+          <div class="modal__form-field input">
+            <label class="input__lable hidden" for="user-tel">Телефон</label>
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
@@ -399,12 +415,12 @@
             />
           </div>
 
-          <div class="form-field">
-            <label class="form-lable hidden" for="user-email"
+          <div class="modal__form-field input">
+            <label class="input__lable hidden" for="user-email"
               >Електронна пошта</label
             >
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               id="user-email"
               name="user-email"
@@ -414,17 +430,20 @@
               maxlength="20"
             />
           </div>
-          <button class="form-button button" type="submit">
+          <button class="modal__button button" type="submit">
             Замовити дзвінок
           </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь <br />
-            <a class="form-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#"
+              >з політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

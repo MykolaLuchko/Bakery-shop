@@ -3,7 +3,11 @@
   top: 0;
   left: o;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 32px;
+  }
 
   &__flex {
     display: flex;
@@ -21,9 +25,32 @@
     gap: 40px;
   }
   &__menu {
-    display: flex;
-    gap: 64px;
-    justify-content: center;
-    flex-grow: 1;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+  }
+
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    fill: var(--color-primery-light);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
